@@ -1,0 +1,4 @@
+github.com/gin-gonic/gin v1.7.4 h1:fCn7/TLQWUdV1nJGqbNl+6UuI6UylV6YHJk3OqJxW8c=
+github.com/gin-gonic/gin v1.7.4/go.mod h1:ubk4bQ4a7M9KFJGRuV7Ud+i6UuV6ezZw6UuV6+D0Lio=
+github.com/mdlayher/wgctrl v1.2.0 h1:IOo5w5A+b1lGrFJ5lN1yPI9jR8nEpJpsm2r2rHuZqf0=
+github.com/mdlayher/wgctrl v1.2.0/go.mod h1:m/OlE2lShQO3ZqWwZKpze08t20slOYpGK0PLxOcOJdM=
