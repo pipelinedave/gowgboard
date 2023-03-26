@@ -1,16 +1,33 @@
-FROM golang:1.16-alpine
+FROM golang:1.17-alpine AS builder
 
 WORKDIR /app
+COPY . .
 
-COPY go.mod go.sum ./
+RUN go env -w GOPROXY=https://proxy.golang.org,direct
 RUN go mod download
+RUN go build -o gowgboard .
 
-COPY main.go .
+FROM alpine:3.14
 
-RUN go build -o app .
+WORKDIR /app
+COPY --from=builder /app/gowgboard .
 
-EXPOSE 8080
+CMD ["./gowgboard"]
 
-CMD ["./app"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
